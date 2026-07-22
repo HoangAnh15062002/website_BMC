@@ -1185,10 +1185,10 @@ ul { list-style: none; }
   font-family: 'Montserrat', sans-serif;
   font-size: 1.7rem;
   font-weight: 800;
-  color: var(--primary);
+  color: #fff;
   letter-spacing: -1px;
 }
-.leader-president .leader-initials { color: var(--primary); }
+.leader-president .leader-initials { color: #fff; }
 .leader-badge {
   position: absolute;
   bottom: -2px;
@@ -1206,8 +1206,9 @@ ul { list-style: none; }
   border: 3px solid #fff;
 }
 .leader-president .leader-badge {
-  background: #fff;
-  color: var(--accent);
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
 }
 .leader-meta { flex: 1; min-width: 0; }
 .leader-tag {
