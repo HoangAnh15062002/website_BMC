@@ -322,7 +322,7 @@ ul { list-style: none; }
   to { opacity: 1; transform: translateY(0); }
 }
 .hero-highlight {
-  background: linear-gradient(135deg, var(--accent), var(--accent-lt), #ffd700);
+  background: linear-gradient(135deg, var(--primary), var(--primary2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1139,7 +1139,7 @@ ul { list-style: none; }
   border-color: var(--accent);
 }
 .leader-president::before {
-  background: linear-gradient(90deg, var(--accent), #fff);
+  background: linear-gradient(90deg, var(--primary), var(--primary2));
 }
 .leader-card:hover {
   transform: translateY(-6px);
@@ -1162,7 +1162,7 @@ ul { list-style: none; }
   outline: 2px solid var(--accent);
 }
 .leader-president .leader-avatar {
-  background: linear-gradient(135deg, var(--accent) 0%, #fff 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary2) 100%);
   outline-color: rgba(255,255,255,.4);
 }
 .leader-initials {
