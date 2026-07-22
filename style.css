@@ -355,12 +355,17 @@ ul { list-style: none; }
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 4px;
+}
+.mini-icon {
+  font-size: 1.4rem;
+  line-height: 1;
 }
 .mini-number {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   font-weight: 900;
-  color: var(--accent-lt);
+  color: #fff;
 }
 .mini-label {
   font-size: .7rem;
