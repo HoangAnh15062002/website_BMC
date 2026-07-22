@@ -322,16 +322,16 @@ ul { list-style: none; }
   to { opacity: 1; transform: translateY(0); }
 }
 .hero-highlight {
-  background: linear-gradient(135deg, var(--primary), var(--primary2));
+  background: linear-gradient(135deg, #fff 0%, #E3F2FD 50%, #fff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   display: block;
-  animation: shimmer 3s ease-in-out infinite;
+  animation: shimmer 2s ease-in-out infinite;
 }
 @keyframes shimmer {
-  0%, 100% { filter: brightness(1); }
-  50% { filter: brightness(1.2); }
+  0%, 100% { filter: brightness(1) drop-shadow(0 0 2px rgba(255,255,255,.5)); }
+  50% { filter: brightness(1.3) drop-shadow(0 0 8px rgba(255,255,255,.8)); }
 }
 .hero-subtitle {
   color: rgba(255,255,255,.85);
