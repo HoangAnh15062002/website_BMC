@@ -437,7 +437,7 @@ ul { list-style: none; }
    STATS
    =========================== */
 .stats-section {
-  background: linear-gradient(135deg, #4A90E2 0%, #1976D2 100%);
+  background: linear-gradient(135deg, #87CEEB 0%, #5BA9E0 100%);
   padding: 48px 0;
 }
 .stats-container {
