@@ -355,23 +355,27 @@ ul { list-style: none; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
 }
 .mini-icon {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1;
+  margin-bottom: 2px;
 }
 .mini-number {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 900;
   color: #fff;
+  line-height: 1.1;
+  margin-bottom: 0;
 }
 .mini-label {
-  font-size: .7rem;
-  color: rgba(255,255,255,.6);
+  font-size: .75rem;
+  color: rgba(255,255,255,.85);
   text-transform: uppercase;
   letter-spacing: .05em;
+  margin-top: 0;
 }
 .mini-divider {
   width: 1px;
@@ -433,7 +437,7 @@ ul { list-style: none; }
    STATS
    =========================== */
 .stats-section {
-  background: var(--primary);
+  background: linear-gradient(135deg, #4A90E2 0%, #1976D2 100%);
   padding: 48px 0;
 }
 .stats-container {
