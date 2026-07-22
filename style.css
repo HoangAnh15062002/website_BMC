@@ -2098,6 +2098,26 @@ ul { list-style: none; }
 }
 
 @media (max-width: 768px) {
+  /* ----- Modal Gallery ----- */
+  #modalImg {
+    aspect-ratio: 4/3;
+  }
+  .modal-thumbs img {
+    width: 60px;
+    height: 45px;
+  }
+  .modal-gallery {
+    padding: 16px 16px 0;
+  }
+  .modal-info {
+    padding: 0 16px 24px;
+  }
+  .modal-nav {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+  }
+
   /* ----- Hero ----- */
   .hero { min-height: 580px; }
   .hero-content { padding: 0 16px; }
@@ -2189,6 +2209,31 @@ ul { list-style: none; }
 }
 
 @media (max-width: 480px) {
+  /* ----- Modal Gallery ----- */
+  #modalImg {
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+  }
+  .modal-thumbs {
+    gap: 6px;
+  }
+  .modal-thumbs img {
+    width: 50px;
+    height: 50px;
+  }
+  .close-btn {
+    top: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    font-size: 1.5rem;
+  }
+  .modal-nav {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
   .container { padding: 0 16px; }
   .stats-container { grid-template-columns: repeat(2, 1fr); gap: 20px; }
   .stat-icon { font-size: 1.6rem; }
