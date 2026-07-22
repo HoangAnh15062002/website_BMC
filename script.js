@@ -315,7 +315,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <span>📬 Email đã được gửi tự động</span>
             </div>
             <div class="msg-actions" style="margin-top: 14px;">
-              <a href="tel:0972253366" class="msg-btn msg-btn-primary">📞 Gọi ngay 0972 253 366</a>
+              <a href="tel:0965548884" class="msg-btn msg-btn-primary">📞 Gọi ngay 0965 548 884</a>
               <button type="button" id="sendAnotherBtn" class="msg-btn">✉️ Gửi yêu cầu khác</button>
             </div>
           `);
@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <p class="msg-desc">Đã có lỗi mạng, vui lòng thử 1 trong các cách sau:</p>
           <div class="msg-actions" style="margin-bottom: 12px;">
             <button type="button" id="retryBtn" class="msg-btn msg-btn-primary">🔄 Thử lại</button>
-            <a href="tel:0972253366" class="msg-btn">📞 Gọi 0972 253 366</a>
+            <a href="tel:0965548884" class="msg-btn">📞 Gọi 0965 548 884</a>
             <a href="mailto:congtybmcvinhphuc@gmail.com?subject=Yeu cau tu van" class="msg-btn">📧 Gửi Email</a>
           </div>
         `);
