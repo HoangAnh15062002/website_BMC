@@ -1991,10 +1991,11 @@ ul { list-style: none; }
 .close-btn:hover {
   background: var(--red);
 }
-.modal-body img {
+#modalImg {
   width: 100%;
   height: 350px;
-  object-fit: cover;
+  object-fit: contain;
+  background: #000;
   border-radius: 12px;
   margin-bottom: 16px;
 }
@@ -2009,10 +2010,12 @@ ul { list-style: none; }
   padding: 10px 0;
   scrollbar-width: thin;
   scrollbar-color: var(--primary) #eee;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .modal-thumbs img {
-  width: 80px;
-  height: 60px;
+  width: 100px;
+  height: 70px;
   object-fit: cover;
   border-radius: 8px;
   cursor: pointer;
