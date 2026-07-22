@@ -363,30 +363,82 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalValue = document.getElementById('modalValue');
   const modalInvestor = document.getElementById('modalInvestor');
   const modalDesc = document.getElementById('modalDesc');
+  const modalThumbs = document.getElementById('modalThumbs');
+  let currentImages = [];
+  let currentIndex = 0;
 
   if (modal) {
     const closeBtn = document.querySelector('.close-btn');
+    const prevBtn = document.querySelector('.modal-prev');
+    const nextBtn = document.querySelector('.modal-next');
 
     // Open modal
     projectCards.forEach(card => {
       card.addEventListener('click', () => {
-        const img = card.querySelector('.project-img img').src;
+        const mainImg = card.querySelector('.project-img img').src;
         const cat = card.querySelector('.project-cat').innerText;
         const title = card.querySelector('h3').innerText;
         const value = card.querySelector('.project-value').innerText;
         const desc = card.querySelector('.project-info p').innerText;
         const investor = card.getAttribute('data-investor') || 'Đang cập nhật';
+        const imagesAttr = card.getAttribute('data-images') || mainImg;
 
-        modalImg.src = img;
+        // Get all images
+        currentImages = imagesAttr.split(',');
+        currentIndex = 0;
+
+        // Set main image
+        modalImg.src = currentImages[0];
         modalCat.innerText = cat;
         modalTitle.innerText = title;
         modalValue.innerText = value;
         modalInvestor.innerText = investor;
         modalDesc.innerText = desc;
 
+        // Generate thumbnails
+        modalThumbs.innerHTML = '';
+        currentImages.forEach((img, idx) => {
+          const thumb = document.createElement('img');
+          thumb.src = img;
+          thumb.className = idx === 0 ? 'active' : '';
+          thumb.addEventListener('click', () => {
+            currentIndex = idx;
+            modalImg.src = img;
+            updateThumbActive();
+          });
+          modalThumbs.appendChild(thumb);
+        });
+
         modal.classList.add('show');
-        document.body.style.overflow = 'hidden'; // prevent background scrolling
+        document.body.style.overflow = 'hidden';
       });
+    });
+
+    function updateThumbActive() {
+      const thumbs = modalThumbs.querySelectorAll('img');
+      thumbs.forEach((t, i) => {
+        t.className = i === currentIndex ? 'active' : '';
+      });
+    }
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+      modalImg.src = currentImages[currentIndex];
+      updateThumbActive();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % currentImages.length;
+      modalImg.src = currentImages[currentIndex];
+      updateThumbActive();
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (!modal.classList.contains('show')) return;
+      if (e.key === 'ArrowLeft') prevBtn.click();
+      if (e.key === 'ArrowRight') nextBtn.click();
+      if (e.key === 'Escape') closeModal();
     });
 
     // Close modal functions
