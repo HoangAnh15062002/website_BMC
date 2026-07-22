@@ -322,7 +322,7 @@ ul { list-style: none; }
   to { opacity: 1; transform: translateY(0); }
 }
 .hero-highlight {
-  background: linear-gradient(135deg, #fff 0%, #E3F2FD 50%, #fff 100%);
+  background: linear-gradient(135deg, #fff 0%, #90CAF9 50%, #fff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
