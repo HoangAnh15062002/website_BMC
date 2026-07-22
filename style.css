@@ -1215,6 +1215,7 @@ ul { list-style: none; }
   display: inline-block;
   background: rgba(200,150,30,.15);
   color: var(--accent);
+  border: 1px solid rgba(200,150,30,.4);
   padding: 4px 14px;
   border-radius: 50px;
   font-size: .76rem;
@@ -1225,7 +1226,8 @@ ul { list-style: none; }
 }
 .leader-president .leader-tag {
   background: rgba(255,255,255,.15);
-  color: var(--accent-lt);
+  color: #fff;
+  border-color: rgba(255,255,255,.4);
 }
 .leader-name {
   font-size: 1.4rem;
