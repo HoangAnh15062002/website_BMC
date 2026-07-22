@@ -1994,8 +1994,7 @@ ul { list-style: none; }
 }
 #modalImg {
   width: 100%;
-  max-height: 50vh;
-  height: auto;
+  aspect-ratio: 16/9;
   object-fit: contain;
   background: #000;
   border-radius: 12px;
@@ -2013,7 +2012,6 @@ ul { list-style: none; }
   scrollbar-width: thin;
   scrollbar-color: var(--primary) #eee;
   justify-content: center;
-  flex-wrap: wrap;
 }
 .modal-thumbs img {
   width: 100px;
