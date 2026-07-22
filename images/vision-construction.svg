@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB"/>
+      <stop offset="100%" style="stop-color:#E0F4FF"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#C4A35A"/>
+      <stop offset="100%" style="stop-color:#8B7355"/>
+    </linearGradient>
+    <linearGradient id="building1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50"/>
+      <stop offset="100%" style="stop-color:#1a252f"/>
+    </linearGradient>
+    <linearGradient id="building2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34495E"/>
+      <stop offset="100%" style="stop-color:#2C3E50"/>
+    </linearGradient>
+    <linearGradient id="crane" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E74C3C"/>
+      <stop offset="100%" style="stop-color:#C0392B"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky -->
+  <rect width="800" height="400" fill="url(#sky)"/>
+  
+  <!-- Sun -->
+  <circle cx="680" cy="80" r="50" fill="#FFD700" opacity="0.9"/>
+  <circle cx="680" cy="80" r="65" fill="#FFD700" opacity="0.3"/>
+  
+  <!-- Clouds -->
+  <g fill="#fff" opacity="0.8">
+    <ellipse cx="150" cy="80" rx="60" ry="30"/>
+    <ellipse cx="200" cy="70" rx="50" ry="25"/>
+    <ellipse cx="100" cy="90" rx="40" ry="20"/>
+    
+    <ellipse cx="550" cy="120" rx="70" ry="35"/>
+    <ellipse cx="620" cy="110" rx="50" ry="25"/>
+    <ellipse cx="480" cy="130" rx="45" ry="22"/>
+  </g>
+  
+  <!-- Mountains -->
+  <polygon points="0,400 150,280 300,400" fill="#7D9D6A" opacity="0.6"/>
+  <polygon points="200,400 400,220 600,400" fill="#6B8E5A" opacity="0.5"/>
+  <polygon points="500,400 700,300 800,350 800,400" fill="#7D9D6A" opacity="0.4"/>
+  
+  <!-- Ground -->
+  <rect y="400" width="800" height="200" fill="url(#ground)"/>
+  
+  <!-- Road/Construction area -->
+  <rect y="420" width="800" height="180" fill="#8B7355"/>
+  
+  <!-- Road markings -->
+  <rect y="480" width="800" height="4" fill="#F39C12" opacity="0.6"/>
+  <g fill="#fff" opacity="0.8">
+    <rect x="20" y="482" width="40" height="2"/>
+    <rect x="100" y="482" width="40" height="2"/>
+    <rect x="180" y="482" width="40" height="2"/>
+    <rect x="260" y="482" width="40" height="2"/>
+    <rect x="340" y="482" width="40" height="2"/>
+    <rect x="420" y="482" width="40" height="2"/>
+    <rect x="500" y="482" width="40" height="2"/>
+    <rect x="580" y="482" width="40" height="2"/>
+    <rect x="660" y="482" width="40" height="2"/>
+    <rect x="740" y="482" width="40" height="2"/>
+  </g>
+  
+  <!-- Construction crane 1 -->
+  <g>
+    <rect x="80" y="200" width="20" height="220" fill="#5D6D7E"/>
+    <rect x="40" y="180" width="200" height="12" fill="url(#crane)"/>
+    <rect x="220" y="150" width="8" height="42" fill="#E74C3C"/>
+    <line x1="60" y1="180" x2="60" y2="420" stroke="#5D6D7E" stroke-width="6"/>
+    <line x1="100" y1="180" x2="100" y2="420" stroke="#5D6D7E" stroke-width="6"/>
+    <rect x="0" y="400" width="100" height="30" fill="#5D6D7E"/>
+  </g>
+  
+  <!-- Construction crane 2 -->
+  <g>
+    <rect x="580" y="160" width="18" height="260" fill="#5D6D7E"/>
+    <rect x="480" y="140" width="220" height="10" fill="url(#crane)"/>
+    <rect x="680" y="110" width="6" height="40" fill="#E74C3C"/>
+    <line x1="560" y1="140" x2="560" y2="420" stroke="#5D6D7E" stroke-width="5"/>
+    <line x1="600" y1="140" x2="600" y2="420" stroke="#5D6D7E" stroke-width="5"/>
+    <rect x="520" y="400" width="80" height="25" fill="#5D6D7E"/>
+  </g>
+  
+  <!-- Buildings -->
+  <rect x="150" y="280" width="120" height="140" fill="url(#building1)"/>
+  <rect x="280" y="240" width="100" height="180" fill="url(#building2)"/>
+  <rect x="500" y="300" width="90" height="120" fill="url(#building1)"/>
+  
+  <!-- Windows -->
+  <g fill="#F4D03F" opacity="0.8">
+    <rect x="165" y="295" width="20" height="25"/>
+    <rect x="200" y="295" width="20" height="25"/>
+    <rect x="235" y="295" width="20" height="25"/>
+    <rect x="165" y="335" width="20" height="25"/>
+    <rect x="200" y="335" width="20" height="25"/>
+    <rect x="235" y="335" width="20" height="25"/>
+    <rect x="165" y="375" width="20" height="25"/>
+    <rect x="200" y="375" width="20" height="25"/>
+    <rect x="235" y="375" width="20" height="25"/>
+    
+    <rect x="295" y="255" width="18" height="22"/>
+    <rect x="330" y="255" width="18" height="22"/>
+    <rect x="295" y="290" width="18" height="22"/>
+    <rect x="330" y="290" width="18" height="22"/>
+    <rect x="295" y="325" width="18" height="22"/>
+    <rect x="330" y="325" width="18" height="22"/>
+    <rect x="295" y="360" width="18" height="22"/>
+    <rect x="330" y="360" width="18" height="22"/>
+    
+    <rect x="515" y="315" width="18" height="22"/>
+    <rect x="550" y="315" width="18" height="22"/>
+    <rect x="515" y="350" width="18" height="22"/>
+    <rect x="550" y="350" width="18" height="22"/>
+    <rect x="515" y="385" width="18" height="22"/>
+    <rect x="550" y="385" width="18" height="22"/>
+  </g>
+  
+  <!-- Excavator -->
+  <g transform="translate(350, 500)">
+    <rect x="0" y="30" width="80" height="35" rx="5" fill="#F39C12"/>
+    <rect x="10" y="10" width="40" height="25" rx="3" fill="#E67E22"/>
+    <rect x="15" y="15" width="15" height="12" fill="#85C1E9"/>
+    <circle cx="15" cy="70" r="15" fill="#2C3E50"/>
+    <circle cx="65" cy="70" r="15" fill="#2C3E50"/>
+    <rect x="70" y="20" width="50" height="8" fill="#7F8C8D"/>
+    <rect x="110" y="10" width="8" height="30" fill="#7F8C8D"/>
+    <rect x="60" y="50" width="30" height="6" fill="#7F8C8D"/>
+  </g>
+  
+  <!-- Worker silhouette 1 -->
+  <g transform="translate(200, 470)" fill="#2C3E50">
+    <circle cx="10" cy="0" r="8"/>
+    <rect x="4" y="10" width="12" height="25" rx="2"/>
+    <rect x="0" y="35" width="6" height="20"/>
+    <rect x="14" y="35" width="6" height="20"/>
+    <rect x="2" y="55" width="8" height="4"/>
+    <rect x="14" y="55" width="8" height="4"/>
+  </g>
+  
+  <!-- Worker silhouette 2 -->
+  <g transform="translate(450, 480)" fill="#2C3E50">
+    <circle cx="10" cy="0" r="8"/>
+    <rect x="4" y="10" width="12" height="25" rx="2"/>
+    <rect x="0" y="35" width="6" height="18"/>
+    <rect x="14" y="35" width="6" height="18"/>
+    <rect x="2" y="53" width="8" height="4"/>
+    <rect x="14" y="53" width="8" height="4"/>
+  </g>
+  
+  <!-- Construction cones -->
+  <g>
+    <polygon points="700,520 690,560 710,560" fill="#E74C3C"/>
+    <rect x="687" y="560" width="26" height="6" fill="#2C3E50"/>
+    <polygon points="730,520 720,560 740,560" fill="#E74C3C"/>
+    <rect x="717" y="560" width="26" height="6" fill="#2C3E50"/>
+  </g>
+  
+  <!-- Safety vest accents -->
+  <rect x="200" y="478" width="24" height="8" fill="#F39C12"/>
+  <rect x="450" y="488" width="24" height="8" fill="#F39C12"/>
+  
+  <!-- BMC Logo placeholder -->
+  <rect x="320" y="450" width="160" height="60" rx="8" fill="#0D1B2A" opacity="0.9"/>
+  <text x="400" y="485" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#D4AF37" text-anchor="middle">BMC</text>
+  <text x="400" y="502" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle">CONSTRUCTION</text>
+</svg>

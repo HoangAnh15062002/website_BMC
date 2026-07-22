@@ -1,0 +1,24 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Env
+.env
+.env.local
+
+# Files PDF lớn (không push lên git)
+*.pdf
